@@ -8,7 +8,7 @@
   "description": "NodeJS Typescript Boilerplate",
   "main": "build/index.js",
   "scripts": {
-    "prepublishOnly": "npm run lint && npm run build",
+    "prepublishOnly": "npm run eslint && npm run build",
     "dev": "./node_modules/nodemon/bin/nodemon.js -e ts --no-stdin",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js",
