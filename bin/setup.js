@@ -3,7 +3,7 @@ const path = require('path');
 
 const { runCmd, hasYarn } = require('./utilityFunctions');
 
-const setup = async () => {
+const setup = async ({ appPath, repo, folderName }) => {
   try {
     // Clone repo
     console.log(`Downloading files from repo ${repo}`);
