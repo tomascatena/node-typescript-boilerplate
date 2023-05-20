@@ -1,6 +1,6 @@
 {
   "name": "@pelusa/create-node-ts-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publishConfig": {
     "public": true
   },
