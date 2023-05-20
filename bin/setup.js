@@ -34,7 +34,9 @@ const setup = async ({ appPath, repo, folderName }) => {
 
     // Remove extra files
     fs.unlinkSync(path.join(appPath, 'CHANGELOG.md'));
-    fs.unlinkSync(path.join(appPath, 'bin', 'createReactTsApp.js'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'createNodeTsApp.js'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'setup.js'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'utilityFunctions.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
 
     console.log('Installation is now complete!');
