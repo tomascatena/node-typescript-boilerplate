@@ -1,10 +1,12 @@
 {
   "name": "@pelusa/create-node-ts-boilerplate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publishConfig": {
     "public": true
   },
-  "bin": "bin/createNodeTsApp.js",
+  "bin": {
+    "create-node-ts-boilerplate": "bin/createNodeTsApp.js"
+  },
   "description": "NodeJS Typescript Boilerplate",
   "main": "build/index.js",
   "scripts": {
