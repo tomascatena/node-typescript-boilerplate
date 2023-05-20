@@ -9,7 +9,7 @@
     "plugin:security/recommended"
   ],
   "ignorePatterns": [
-    "dist/*"
+    "build/*"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
@@ -21,65 +21,20 @@
     "eslint-plugin-jest"
   ],
   "rules": {
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-      "always",
-      {
-        "exceptAfterSingleLine": true
-      }
-    ],
-    "@typescript-eslint/naming-convention": [
-      "warn",
-      {
-        "format": [
-          "camelCase",
-          "PascalCase",
-          "UPPER_CASE"
-        ],
-        "selector": "variable"
-      }
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "error"
-    ],
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
+    "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "@typescript-eslint/naming-convention": ["warn", { "format": ["camelCase", "PascalCase", "UPPER_CASE"], "selector": "variable" }],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-use-before-define": ["error"],
     "camelcase": "off",
     "comma-dangle": "off",
-    "comma-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": false
-      }
-    ],
+    "comma-spacing": ["error", { "after": true, "before": false}],
     "consistent-return": "off",
     "func-names": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "": "never",
-        "js": "never",
-        "jsx": "never",
-        "mjs": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
+    "import/extensions": [ "error","ignorePackages", { "": "never", "js": "never", "jsx": "never", "mjs": "never", "ts": "never", "tsx": "never" }],
     "import/order": "off",
     "import/prefer-default-export": "off",
     "jest/expect-expect": "off",
-    "max-len": [
-      "error",
-      {
-        "code": 160,
-        "ignoreComments": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true
-      }
-    ],
+    "max-len": ["error", { "code": 160, "ignoreComments": true, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
     "multiline-ternary": "off",
     "no-console": "off",
     "no-param-reassign": "off",
@@ -88,23 +43,8 @@
     "no-use-before-define": "off",
     "react/jsx-filename-extension": "off",
     "security/detect-object-injection": "off",
-    "semi": [
-      2,
-      "always"
-    ],
-    "sort-imports-es6-autofix/sort-imports-es6": [
-      2,
-      {
-        "ignoreCase": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "none",
-          "all",
-          "multiple",
-          "single"
-        ]
-      }
-    ],
+    "semi": [2, "always"],
+    "sort-imports-es6-autofix/sort-imports-es6": [2, { "ignoreCase": false, "ignoreMemberSort": false, "memberSyntaxSortOrder": ["none", "all", "multiple", "single"] }],
     "space-before-function-paren": "off"
   }
 }
