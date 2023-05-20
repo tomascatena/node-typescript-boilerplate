@@ -9,7 +9,8 @@
     "plugin:security/recommended"
   ],
   "ignorePatterns": [
-    "build/*"
+    "build/*",
+    "bin/"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
