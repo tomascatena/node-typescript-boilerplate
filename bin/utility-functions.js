@@ -23,12 +23,8 @@ const runCmd = async (command) => {
 };
 
 const hasYarn = () => {
-  try {
-    spawnSync('yarnpkg --version', { stdio: 'ignore' });
-    return true;
-  } catch {
-    return false;
-  }
+  const result = spawnSync('yarnpkg --version', { stdio: 'ignore', shell: true });
+  return result.status === 0;
 };
 
 module.exports = {
