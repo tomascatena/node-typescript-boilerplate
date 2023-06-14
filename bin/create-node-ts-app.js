@@ -31,4 +31,17 @@ try {
   process.exit(1);
 }
 
-setup({ appPath, repo, folderName });
+setup({ appPath, repo, folderName })
+  .then(() => {
+    console.log('Installation is now complete!');
+    console.log();
+    console.log('We suggest that you start by typing:');
+    console.log(`    cd ${folderName}`);
+    console.log('    npm run dev');
+    console.log();
+    console.log('Enjoy your NodeJS TypeScript boilerplate, which already supports a large number of ready-made features!');
+    console.log('Check README.md for more info.');
+  })
+  .catch((error) => {
+    console.log(error);
+  });
