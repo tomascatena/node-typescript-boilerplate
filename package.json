@@ -24,7 +24,10 @@
   "keywords": [
     "node",
     "typescript",
-    "boilerplate"
+    "boilerplate",
+    "starter",
+    "jest",
+    "eslint"
   ],
   "author": "Tomás Catena",
   "license": "MIT",
