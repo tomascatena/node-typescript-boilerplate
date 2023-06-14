@@ -1,19 +1,25 @@
 # NodeJS TypeScript Boilerplate
 
-This project is a boilerplate for creating applications using NodeJS and TypeScript. 
+This project is a boilerplate for creating applications using Node.js and TypeScript.
 
 ## Features
 
-- Node.js
-- TypeScript
-- ESLint for linting
+ - Node.js
+ - TypeScript
+ - ESLint for linting
+ - Jest for testing
+ - Husky for Git hooks
 
 ## Requirements
 
-- Node.js 12.x or later
-- NPM 6.x or later
+Make sure you have the following software installed on your machine:
+
+ - Node.js 16.x or later
+ - NPM 6.x or later
 
 ## Getting Started
+
+Follow these steps to get started with the boilerplate:
 
 1. Clone the repository:
 
