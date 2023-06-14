@@ -1,6 +1,7 @@
 {
   "env": {
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "airbnb-typescript",
@@ -52,7 +53,13 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".ts"]
+      },
+      "alias": {
+        "map": [
+          ["@", "./src"]
+        ],
+        "extensions": [".js", ".ts"]
       }
     }
-  },
+  }
 }
