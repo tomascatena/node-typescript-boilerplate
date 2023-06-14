@@ -26,7 +26,8 @@
     "typescript",
     "boilerplate",
     "jest",
-    "eslint"
+    "eslint",
+    "husky"
   ],
   "author": "Tomás Catena",
   "license": "MIT",
