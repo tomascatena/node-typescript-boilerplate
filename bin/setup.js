@@ -20,7 +20,7 @@ const installDependencies = async (useYarn) => {
   console.log();
 };
 
-const removeFiles = (files) => {
+const removeFiles = (appPath, files) => {
   for (const file of files) {
     const filePath = path.join(appPath, file);
     if (fs.existsSync(filePath)) {
@@ -42,7 +42,7 @@ const setup = async ({ appPath, repo, folderName }) => {
       path.join('bin', 'setup.js'),
       path.join('bin', 'utility-functions.js'),
     ];
-    removeFiles(filesToRemove);
+    removeFiles(appPath, filesToRemove);
   } catch (error) {
     throw new Error(`Setup failed: ${error}`);
   }
