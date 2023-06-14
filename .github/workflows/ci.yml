@@ -4,6 +4,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '**.ts'
+      - '**.js'
+      - '.eslintrc.js'
+      - 'tsconfig.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - 'node_modules/**'
   pull_request:
     branches:
       - main
